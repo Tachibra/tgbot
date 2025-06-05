@@ -38,3 +38,5 @@ if __name__ == '__main__':
     app.add_handler(MessageHandler(filters.VOICE, handle_voice))
     app.add_handler(MessageHandler(filters.AUDIO, handle_audio))
     app.add_handler(MessageHandler(filters.Sticker.ALL, handle_sticker))
+
+    app.run_polling()
